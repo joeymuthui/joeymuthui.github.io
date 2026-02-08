@@ -21,6 +21,7 @@ show_sidebar: true
 # Minimal Mistakes theme
 theme: "minimal-mistakes-jekyll"
 minimal_mistakes_skin: default
+remote_theme: mmistakes/minimal-mistakes
 repository: "https://github.com/joeymuthui/joeymuthui.github.io"
 
 # Navigation (menu)
