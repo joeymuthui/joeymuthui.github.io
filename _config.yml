@@ -8,23 +8,28 @@
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # 'bundle exec jekyll serve'. If you change this file, please restart the server process.
 
-# Site settings
+# ========================
+# Site Settings
+# ========================
 title: "JOSEPH MUTHUI"
-description: "Aspiring IT professional | Web Developer | Portfolio"
-baseurl: "" # leave empty unless deploying to a subfolder
-url: "https://joeymuthui.github.io" # replace with your GitHub Pages URL
+description: "Aspiring IT Professional | Web Developer | Data Enthusiast"
+baseurl: "" # leave empty if deploying to root
+url: "https://joeymuthui.github.io" # your GitHub Pages URL
 author: "Joseph Muthui"
 email: "jmuthui739@gmail.com"
-avatar: "/assets/images/profile.jpg" # make sure this file exists
+avatar: "" # put your photo here
 show_sidebar: true
 
-# Minimal Mistakes theme
-theme: "minimal-mistakes-jekyll"
+# ========================
+# Theme Settings
+# ========================
+remote_theme: "mmistakes/minimal-mistakes"
 minimal_mistakes_skin: default
-remote_theme: mmistakes/minimal-mistakes
 repository: "https://github.com/joeymuthui/joeymuthui.github.io"
 
-# Navigation (menu)
+# ========================
+# Navigation Menu
+# ========================
 navigation:
   main:
     - title: "Home"
@@ -38,13 +43,25 @@ navigation:
     - title: "Contact"
       url: /contact/
 
-# Social links
+# ========================
+# Social Links
+# ========================
 social:
   github: "https://github.com/joeymuthui"
-  linkedin: "https://www.linkedin.com/in/joeymuthui/"
-  twitter: "https://twitter.com/joeymuthui"
+  linkedin: "https://www.linkedin.com/in/joseph-muthui-it"
+  
 
+# ========================
+# Build Settings
+# ========================
+markdown: kramdown
+permalink: /:title/
+paginate: 5
+timezone: "Africa/Nairobi"
+
+# ========================
 # Plugins
+# ========================
 plugins:
   - jekyll-paginate
   - jekyll-sitemap
@@ -52,22 +69,20 @@ plugins:
   - jekyll-feed
   - jemoji
   - jekyll-include-cache
+  - jekyll-remote-theme
 
-# Build settings
-markdown: kramdown
-remote_theme: mmistakes/minimal-mistakes
-permalink: /:title/
-paginate: 5
-timezone: "Africa/Nairobi"
-
-# Footer links
+# ========================
+# Footer Links
+# ========================
 footer:
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/joeymuthui"
 
-# Defaults for pages and posts
+# ========================
+# Defaults for Pages and Posts
+# ========================
 defaults:
   - scope:
       path: ""
