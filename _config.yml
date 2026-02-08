@@ -9,45 +9,41 @@
 # 'bundle exec jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
-title: JOSEPH MUTHUI
-email: jmuthui739@gmail.com
-description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-github_username: joeymuthui
+title: "JOSEPH MUTHUI"
+description: "Aspiring IT professional | Web Developer | Portfolio"
+baseurl: "" # leave empty unless deploying to a subfolder
+url: "https://joeymuthui.github.io" # replace with your GitHub Pages URL
+author: "Joseph Muthui"
+email: "jmuthui739@gmail.com"
+avatar: "/assets/images/profile.jpg" # make sure this file exists
+show_sidebar: true
+
+# Minimal Mistakes theme
+theme: "minimal-mistakes-jekyll"
 minimal_mistakes_skin: default
-search: true
+repository: "https://github.com/joeymuthui/joeymuthui.github.io"
 
-# Build settings
-markdown: kramdown
-remote_theme: mmistakes/minimal-mistakes
-# Outputting
-permalink: /:categories/:title/
-paginate: 5 # amount of posts to show
-paginate_path: /page:num/
-timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+# Navigation (menu)
+navigation:
+  main:
+    - title: "Home"
+      url: /
+    - title: "Resume"
+      url: /resume/
+    - title: "Projects"
+      url: /projects/
+    - title: "Lab Challenges"
+      url: /labs/
+    - title: "Contact"
+      url: /contact/
 
-include:
-  - _pages
+# Social links
+social:
+  github: "https://github.com/joeymuthui"
+  linkedin: "https://www.linkedin.com/in/joeymuthui/"
+  twitter: "https://twitter.com/joeymuthui"
 
-# Exclude from processing.
-# The following items will not be processed, by default. Create a custom list
-# to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
-
-# Plugins (previously gems:)
+# Plugins
 plugins:
   - jekyll-paginate
   - jekyll-sitemap
@@ -56,49 +52,36 @@ plugins:
   - jemoji
   - jekyll-include-cache
 
-# Site author info (used in sidebar)
-author: "Joseph Muthui"
-email: jmuthui739@gmail.com
-avatar: /assets/images/profile.jpg  # path to your photo
-description: "Aspiring IT professional | Web Developer | Portfolio"
+# Build settings
+markdown: kramdown
+remote_theme: mmistakes/minimal-mistakes
+permalink: /:title/
+paginate: 5
+timezone: "Africa/Nairobi"
 
-# Minimal Mistakes theme settings
-theme: "minimal-mistakes-jekyll"
-repository: "https://github.com/joeymuthui/https://github.com/joeymuthui/joeymuthui.github.io"
-
-# Enable sidebar
-show_sidebar: true
-
-
+# Footer links
 footer:
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/"
+      url: "https://github.com/joeymuthui"
 
+# Defaults for pages and posts
 defaults:
-  # _posts
   - scope:
       path: ""
-      type: posts
+      type: "posts"
     values:
-      layout: single
+      layout: "single"
       author_profile: true
       read_time: true
       comments: true
       share: true
       related: true
-  # _pages
-  - scope:
-      path: "_pages"
-      type: pages
-    values:
-      layout: single
-      author_profile: true
 
-category_archive:
-  type: liquid
-  path: /categories/
-tag_archive:
-  type: liquid
-  path: /tags/
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "single"
+      author_profile: true
