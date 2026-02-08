@@ -9,4 +9,4 @@ tagline: "Aspiring IT Professional | Web Developer | Data Enthusiast"
 show_sidebar: true
 ---
 
-Welcome to my portfolio! Explore my projects, resume, and lab challenges to learn more about my work.
+IT Specialist focused on technical support, GPS tracking systems, and system troubleshooting.
