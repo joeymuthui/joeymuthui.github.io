@@ -57,23 +57,19 @@ plugins:
   - jemoji
   - jekyll-include-cache
 
-author:
-  name   : "First Lastname"
-  avatar : "/assets/images/bio-photo.jpg"
-  bio    : "My awesome biography constrained to a sentence or two goes here."
-  links:
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      url: "https://"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/"
+# Site author info (used in sidebar)
+author: "Joseph Muthui"
+email: jmuthui739@gmail.com
+avatar: /assets/images/profile.jpg  # path to your photo
+description: "Aspiring IT professional | Web Developer | Portfolio"
+
+# Minimal Mistakes theme settings
+theme: "minimal-mistakes-jekyll"
+repository: "your-github-username/your-repo-name"
+
+# Enable sidebar
+show_sidebar: true
+
 
 footer:
   links:
