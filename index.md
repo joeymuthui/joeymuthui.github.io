@@ -3,11 +3,7 @@ layout: single
 author_profile: true
 title: "Joseph Muthui"
 header:
-  overlay_color: "#000"
-  overlay_filter: "0.3"
 ---
-
-# 👋 Hi, I'm Joseph Muthui
 
 ### Aspiring IT Professional | Data Analyst | Power BI Developer
 
@@ -36,5 +32,3 @@ I am passionate about technology, data analysis, and building solutions that tur
 Use the navigation menu above to explore my work.
 
 ---
-
-⭐ Thank you for visiting my portfolio!
