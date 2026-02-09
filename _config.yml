@@ -8,28 +8,29 @@
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # 'bundle exec jekyll serve'. If you change this file, please restart the server process.
 
-# ========================
+# ===============================
 # Site Settings
-# ========================
+# ===============================
 title: "JOSEPH MUTHUI"
 description: "Aspiring IT Professional | Web Developer | Data Enthusiast"
-baseurl: "" # leave empty if deploying to root
-url: "https://joeymuthui.github.io" # your GitHub Pages URL
+url: "https://joeymuthui.github.io"
+baseurl: ""
 author: "Joseph Muthui"
 email: "jmuthui739@gmail.com"
-avatar: "assets/images/profile.jpg" # put your photo here
+
+# Profile image (SIDEBAR)
+avatar: "/assets/images/profile.jpg"
 show_sidebar: true
 
-# ========================
-# Theme Settings
-# ========================
+# ===============================
+# Theme (Minimal Mistakes)
+# ===============================
 remote_theme: "mmistakes/minimal-mistakes"
 minimal_mistakes_skin: default
-repository: "https://github.com/joeymuthui/joeymuthui.github.io"
 
-# ========================
+# ===============================
 # Navigation Menu
-# ========================
+# ===============================
 navigation:
   main:
     - title: "Home"
@@ -43,61 +44,37 @@ navigation:
     - title: "Contact"
       url: /contact/
 
-# ========================
-# Social Links
-# ========================
+# ===============================
+# Social Links (Sidebar)
+# ===============================
 social:
   github: "https://github.com/joeymuthui"
-  linkedin: "https://www.linkedin.com/in/joseph-muthui-it"
-  
+  linkedin: "https://www.linkedin.com/in/joseph-muthui-it/"
 
-# ========================
-# Build Settings
-# ========================
-markdown: kramdown
-permalink: /:title/
-paginate: 5
-timezone: "Africa/Nairobi"
-
-# ========================
-# Plugins
-# ========================
+# ===============================
+# Plugins (GitHub Pages Safe)
+# ===============================
 plugins:
-  - jekyll-paginate
-  - jekyll-sitemap
-  - jekyll-gist
   - jekyll-feed
-  - jemoji
+  - jekyll-seo-tag
+  - jekyll-sitemap
   - jekyll-include-cache
   - jekyll-remote-theme
 
-# ========================
-# Footer Links
-# ========================
-footer:
-  links:
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/joeymuthui"
+# ===============================
+# Markdown & Build
+# ===============================
+markdown: kramdown
+permalink: /:title/
+timezone: Africa/Nairobi
 
-# ========================
-# Defaults for Pages and Posts
-# ========================
+# ===============================
+# Defaults (IMPORTANT)
+# ===============================
 defaults:
   - scope:
       path: ""
-      type: "posts"
+      type: pages
     values:
-      layout: "single"
-      author_profile: true
-      read_time: true
-      comments: true
-      share: true
-      related: true
-
-  - scope:
-      path: ""
-      type: "pages"
-    values:
-      layout: "single"
+      layout: single
       author_profile: true
