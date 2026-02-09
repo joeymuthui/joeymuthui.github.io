@@ -17,7 +17,7 @@ baseurl: "" # leave empty if deploying to root
 url: "https://joeymuthui.github.io" # your GitHub Pages URL
 author: "Joseph Muthui"
 email: "jmuthui739@gmail.com"
-avatar: "" # put your photo here
+avatar: "assets/images/profile.jpg" # put your photo here
 show_sidebar: true
 
 # ========================
